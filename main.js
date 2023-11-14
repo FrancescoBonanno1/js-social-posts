@@ -57,13 +57,13 @@ const posts = [
 ];
 
 for (let i = 0; i < posts.length; i++) {
-    document.getElementById("container").innerHTML = (`
+    document.getElementById("container").innerHTML += (`
     <!-- post di esempio/template, da togliere/commentare e generare da JS -->
-    <!--<div class="post">
+    <div class="post">
         <div class="post__header">
             <div class="post-meta">                    
                 <div class="post-meta__icon">
-                    <img class="profile-pic" src="${posts[i].media}" alt="Phil Mangione">                    
+                    <img class="profile-pic" src="${posts[i].media}" alt="${posts[i].author.name}">                    
                 </div>
                 <div class="post-meta__data">
                     <div class="post-meta__author">${posts[i].author}</div>
